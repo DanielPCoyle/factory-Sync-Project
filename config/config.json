@@ -1,0 +1,13 @@
+{
+        "local": {
+          "username": "root",
+          "password": null,
+          "database": "factory-sync",
+          "host": "127.0.0.1",
+          "dialect": "mysql",
+          "logging":false
+        },
+        "development": {},
+        "test": {},
+        "production": {}
+      }

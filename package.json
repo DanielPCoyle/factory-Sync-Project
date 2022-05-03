@@ -4,12 +4,14 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "do": "node ./node_modules/factory-sync/do.js"
   },
   "dependencies": {
     "expo": "~44.0.2",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
+    "factory-sync": "^1.0.27",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
