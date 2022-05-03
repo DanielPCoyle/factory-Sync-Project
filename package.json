@@ -12,7 +12,8 @@
     "expo": "~44.0.2",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
-    "factory-sync": "^1.0.37",
+    "factory-sync": "^1.0.39",
+    "factory-sync-project": "^1.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
@@ -21,5 +22,17 @@
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
-  "private": true
+  "name": "factory-sync-project",
+  "version": "1.0.1",
+  "description": "An application to be used with factory-sync",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielPCoyle/factory-Sync-Project.git"
+  },
+  "author": "Daniel-Coyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielPCoyle/factory-Sync-Project/issues"
+  },
+  "homepage": "https://github.com/DanielPCoyle/factory-Sync-Project#readme"
 }

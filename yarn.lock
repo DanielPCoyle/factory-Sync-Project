@@ -3129,10 +3129,24 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-factory-sync@^1.0.37:
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/factory-sync/-/factory-sync-1.0.37.tgz#e969d85bf2460cd0d11b8d1291a81ec5a650b172"
-  integrity sha512-TXuyzCj2wMfQ/wL1263eiQyD/ebzVT8ujRmAgtj8dJqKpogEl9zj+zMdZGiccNwIjO4QuCh6Zrb1DfxxEbf13w==
+factory-sync-project@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/factory-sync-project/-/factory-sync-project-1.0.0.tgz#735f1f6c87267ef7a19d7aa82d0a70abb298413e"
+  integrity sha512-Be3Cb7H/6ExfPDIHlH7pzxgJVVPGSian6yndLBLSKt6t2fjZI24oLdad8O66RPzp1e7FCbAIlb0OPvQHAQFaFQ==
+  dependencies:
+    expo "~44.0.2"
+    expo-splash-screen "~0.14.1"
+    expo-status-bar "~1.2.0"
+    factory-sync "^1.0.39"
+    react "17.0.1"
+    react-dom "17.0.1"
+    react-native "0.64.3"
+    react-native-web "0.17.1"
+
+factory-sync@^1.0.39:
+  version "1.0.39"
+  resolved "https://registry.yarnpkg.com/factory-sync/-/factory-sync-1.0.39.tgz#77780c91a488b85ef27fc4849594978c10e1f76e"
+  integrity sha512-T0D6fAFnozUmRUOZVvv5bGWv86HvT2hz1lieKLFajms5YU+KoePoVsTwIlg34soGU4MMi5T/OCDLxMN6LJ61+w==
   dependencies:
     app-root-path "^3.0.0"
     bcrypt "^5.0.1"
