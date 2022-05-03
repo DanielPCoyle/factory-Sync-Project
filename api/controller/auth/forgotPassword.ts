@@ -1,8 +1,8 @@
-import putCall from "../../../services/api/put";
-import { getCall } from "../../../services/api/get";
-import { sendEmail } from "../../../services/email";
+import putCall from "../../services/api/put";
+import { getCall } from "../../services/api/get";
+import { sendEmail } from "../../services/email";
 import path from "path";
-const env = require(path.resolve(`./src/__core/env/${process.env.NODE_ENV ?? "development"}.json`))
+const env = require(path.resolve(`./src/ui_data/env/${process.env.NODE_ENV ?? "local"}.json`))
 const sign = require('jwt-encode');
 
 export default async (req, res) => {

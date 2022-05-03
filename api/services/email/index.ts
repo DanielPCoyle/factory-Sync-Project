@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 
 const OAuth2 = google.auth.OAuth2;
-const settings = require(path.resolve(`./src/__core/env/${process.env.NODE_ENV ?? "development"}.json`))
+const settings = require(path.resolve(`./src/ui_data/env/${process.env.NODE_ENV ?? "local"}.json`))
 
 const createTransporter = async () => {
     const oauth2Client = new OAuth2(

@@ -9,7 +9,7 @@ if (fs.existsSync('.env.'+process.env.NODE_ENV)) {
 }else{
     config()
 }
-const {sequelize}  = require(path.resolve(String(process.env.MODELS_DIR)));
+const {sequelize}  = require(path.resolve(String(process.env.MODELS_DIR ?? "./api/server/models")));
 
 export const upload = async (req, res, next) => {
 	const {model} = parseURL(req);

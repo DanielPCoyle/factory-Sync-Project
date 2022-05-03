@@ -1,5 +1,5 @@
-import { putCall } from "../../../services/api/put";
-import { parseURL } from "../../../services/util";
+import { putCall } from "../../services/api/put";
+import { parseURL } from "../../services/util";
 
 export default async (req, res) => {
     try {

@@ -9,7 +9,7 @@ import util from 'util';
 
 const appendFile = util.promisify(fs.appendFile);
 
-const modelMeta = require(path.resolve(process.env.MODELS_DIR+"/model-meta.json"));
+const modelMeta = require(path.resolve((process.env.MODELS_DIR ?? "./api/server/models")+"/model-meta.json"));
 export const authenticateMiddleware = async (req:any, res:any, next:any) => {
     const {method} = req;
     const { authorization } = req.headers;

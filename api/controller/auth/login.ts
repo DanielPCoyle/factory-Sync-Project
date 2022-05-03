@@ -1,6 +1,6 @@
-import { DB } from "../../../server/models";
+import { DB } from "../../server/models";
 import bcrypt from "bcrypt";
-import { getCall } from "../../../services/api/get";
+import { getCall } from "../../services/api/get";
 import util from 'util';
 import { exec } from "child_process";
 import fs from "fs";
@@ -9,7 +9,7 @@ import fs from "fs";
 // Appends additional data to the login that does not affect the core login feature. 
 let additionalLogin
 try {
-     additionalLogin = require('../../../controller/auth/additionalLoginData').default;
+     additionalLogin = require('../../controller/auth/additionalLoginData').default;
 } catch (ex) {
     additionalLogin = ()=>({logic:"none"})
 }

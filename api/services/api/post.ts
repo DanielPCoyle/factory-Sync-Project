@@ -6,8 +6,8 @@ if (fs.existsSync('.env.'+process.env.NODE_ENV)) {
 }else{
     config()
 }
-const {DB,sequelize}  = require(path.resolve(process.env.MODELS_DIR));
-const modelMetaRaw = require(path.resolve(process.env.MODELS_DIR+"/model-meta.json"));
+const {DB,sequelize}  = require(path.resolve(process.env.MODELS_DIR ?? "./api/server/models" ?? "./api/server/models"));
+const modelMetaRaw = require(path.resolve((process.env.MODELS_DIR ?? "./api/server/models")+"/model-meta.json"));
 const eventFunctions = require("./eventFunctions");
 const transformers = require("./transformers");
 const {getMetaData} = require("./get");

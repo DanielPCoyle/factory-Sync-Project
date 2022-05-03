@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const Sequelize = require('sequelize');
 const {config} = require('dotenv');
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'local';
 const appDir = path.dirname(require.main.filename).replace("/api","/");
 if (fs.existsSync('.env.'+process.env.NODE_ENV)) {
   config({ path: '.env.'+process.env.NODE_ENV })
@@ -10,11 +10,12 @@ if (fs.existsSync('.env.'+process.env.NODE_ENV)) {
     config()
 }
 
-const initModelsPath = path.resolve(appDir+process.env.MODELS_DIR+"/init-models");
+const initModelsPath = path.resolve(appDir+(process.env.MODELS_DIR ?? "./api/server/models")+"/init-models");
 console.log("MODELS PATH:::",initModelsPath)
 const initModels = require(initModelsPath);
 
 let settings = require(appDir + '/config/config')[env];
+console.log(settings)
 settings = {...settings,...{    
   retry: {
     match: [/Deadlock/i],

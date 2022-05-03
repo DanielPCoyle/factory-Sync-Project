@@ -8,7 +8,7 @@ if (fs.existsSync('.env.'+process.env.NODE_ENV)) {
 }else{
     config()
 }
-const {DB,sequelize}  = require(path.resolve(process.env.MODELS_DIR));
+const {DB,sequelize}  = require(path.resolve(process.env.MODELS_DIR ?? "./api/server/models" ?? "./api/server/models"));
 
 export const handleFiles = async (req) =>{
     let {model,id} = req.params;

@@ -1,5 +1,5 @@
-import { getCall, getModels } from "../../../services/api/get";
-import { parseURL } from "../../../services/util";
+import { getCall, getModels } from "../../services/api/get";
+import { parseURL } from "../../services/util";
 
 export default async (req, res) => {
     try {

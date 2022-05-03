@@ -1,5 +1,5 @@
-import putCall from "../../../services/api/put";
-import { getCall } from "../../../services/api/get";
+import putCall from "../../services/api/put";
+import { getCall } from "../../services/api/get";
 const sign = require('jwt-encode');
 
 export default async (req, res) => {

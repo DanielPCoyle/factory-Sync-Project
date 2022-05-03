@@ -3,7 +3,7 @@ import middleware from './middleware';
 import routes from './routes';
 import http from 'http';
 
-const settings = require('../src/__core/env/'+(process.env.NODE_ENV || 'local')+".json") 
+const settings = require('../src/ui_data/env/'+(process.env.NODE_ENV || 'local')+".json") 
 const app = express();
 middleware(app);
 routes(app); 

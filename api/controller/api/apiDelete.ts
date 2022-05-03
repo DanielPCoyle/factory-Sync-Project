@@ -1,5 +1,5 @@
-import { deleteCall } from "../../../services/api/delete";
-import { parseURL } from "../../../services/util";
+import { deleteCall } from "../../services/api/delete";
+import { parseURL } from "../../services/util";
 
 export default async (req, res) => {
     try {
