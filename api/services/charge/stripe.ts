@@ -1,0 +1,1 @@
+export const stripe = require('stripe')("sk_test_zXMF8exEDvu1GQU2HJCUEzRG001gfjecu0")

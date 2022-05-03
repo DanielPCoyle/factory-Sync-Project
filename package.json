@@ -5,6 +5,7 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
+    "api": "ts-node api/index.ts",
     "do": "node ./node_modules/factory-sync/do.js"
   },
   "dependencies": {
