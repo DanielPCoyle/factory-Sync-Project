@@ -1,0 +1,1 @@
+[{"platform":"web","inNav":"web","access":"","name":"Home","path":"/","component":"Home"},{"platform":"web,mobile","inNav":"mobile","access":"public","name":"Login","path":"/login","component":"Login"},{"platform":"web,mobile","inNav":"mobile","access":"","name":"Dashboard","path":"/dashboard","component":"Dashboard"}]
