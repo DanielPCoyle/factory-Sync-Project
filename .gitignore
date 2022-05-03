@@ -57,3 +57,5 @@ dist/
 credentials.json
 
 token.json
+
+api/logs/access.logs
